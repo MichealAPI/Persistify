@@ -1,0 +1,8 @@
+name: '${project.name}'
+version: '${project.version}'
+main: it.mikeslab.persistify.Persistify
+api-version: 1.19
+prefix: PSF
+author: '${module.author}'
+description: '${project.description}'
+website: '${project.url}'
