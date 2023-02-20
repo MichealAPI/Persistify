@@ -31,18 +31,11 @@ package it.mikeslab.persistify.listener;
 
 import it.mikeslab.persistify.object.User;
 import it.mikeslab.persistify.util.MongoDBHandler;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.event.ServerConnectedEvent;
 import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.event.EventHandler;
 
-
-@Setter
-@Getter
-@RequiredArgsConstructor
 public record UserConnectedEvent(MongoDBHandler dbHandler) implements Listener {
 
     @EventHandler
