@@ -1,0 +1,24 @@
+language: java
+jdk:
+  - openjdk16
+
+# Only run builds on the master branch and pull requests
+branches:
+  only:
+    - master
+    - /pull*/
+
+# Define the build script
+script:
+  - mvn test
+
+# Cache the Maven dependency cache to speed up builds
+cache:
+  directories:
+    - $HOME/.m2/repository
+
+# Define the notifications settings
+notifications:
+  email:
+    on_success: never
+    on_failure: always
